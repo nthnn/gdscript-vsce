@@ -13,6 +13,10 @@ GDScript Syntax Highlighting is a Visual Studio Code extension that provides syn
     <img alt="Screenshot" src="https://raw.githubusercontent.com/nthnn/gdscript-vsce/refs/heads/main/assets/screenshot.png" />
 </p>
 
+## Disclaimer
+
+I do not own the Godot logo being used on this repository. It rightfully belongs to [Godot](https://godotengine.org/)'s team.
+
 ## License
 
 See license [here](LICENSE).
