@@ -1,4 +1,7 @@
-# GDScript VSCode Extension
+<p align="center">
+    <img src="https://raw.githubusercontent.com/nthnn/gdscript-vsce/refs/heads/main/assets/godot-logo.png" width="150" />
+</p>
+<h1 align="center">GDScript VSCode Extension</h1>
 
 GDScript Syntax Highlighting is a Visual Studio Code extension that provides syntax highlighting for the GDScript scripting language for Godot. This extension helps developers write and manage GDScript scripts more effectively by offering enhanced code readability through proper syntax highlighting when using VS Code.
 
