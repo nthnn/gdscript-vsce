@@ -1,0 +1,44 @@
+{
+    "name": "gdscript-vsce",
+    "displayName": "GDScript",
+    "description": "GDScript language and syntax highlighting extension.",
+    "version": "0.0.1",
+    "icon": "assets/godot-logo.png",
+    "publisher": "nthnn",
+    "repository": "https://github.com/nthnn/gdscript-vsce",
+    "engines": {
+        "vscode": "^1.91.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "gdscript",
+                "aliases": [
+                    "GDScript",
+                    "gdscript"
+                ],
+                "extensions": [
+                    ".gd"
+                ],
+                "configuration": "language-configuration.json",
+                "icon": {
+                    "light": "assets/godot-logo.png",
+                    "dark": "assets/godot-logo.png"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gdscript",
+                "scopeName": "source.gdscript",
+                "path": "syntaxes/gdscript.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "vsce": "^2.15.0"
+    }
+}
