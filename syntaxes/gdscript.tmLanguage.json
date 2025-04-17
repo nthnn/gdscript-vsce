@@ -1,0 +1,76 @@
+{
+    "name": "GDscript",
+    "scopeName": "source.gdscript",
+
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#strings" },
+        { "include": "#decorators" },
+        { "include": "#keywords" },
+        { "include": "#builtins" },
+        { "include": "#annotations"},
+        { "include": "#numbers" }
+    ],
+
+    "repository": {
+        "comments": {
+            "patterns": [{
+                "name": "comment.line.number-sign.gdscript",
+                "match": "#.*$"
+            }]
+        },
+
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.triple.gdscript",
+                    "begin": "(?:'''|\\\"\\\"\\\")",
+                    "end": "(?:'''|\\\"\\\"\\\")",
+                    "patterns": [{ "include": "#strings" }]
+                },
+                {
+                    "name": "string.quoted.single.gdscript",
+                    "match": "(['\"])(?:\\\\.|(?!\\1).)*\\1"
+                }
+            ]
+        },
+
+        "decorators": {
+            "patterns": [{
+                "name": "meta.decorator.gdscript",
+                "match": "^\\s*@\\w+"
+            }]
+        },
+
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.gdscript",
+                "match": "\\b(?:null|true|false|if|elif|else|for|match|when|while|break|continue|pass|return|class|class_name|extends|is|in|as|self|super|signal|func|static|const|enum|var|breakpoint|await|yield|void)\\b"
+            }]
+        },
+
+        "builtins": {
+            "patterns": [{
+                "name": "support.function.builtin.gdscript",
+                "match": "\\b(?:Color8|assert|char|convert|dict_to_inst|get_stack|inst_to_dict|is_instance_of|len|load|preload|print_debug|print_stack|range|type_exists)\\b"
+            }]
+        },
+
+        "annotations": {
+            "patterns": [{
+                "name": "storage.type.annotation.gdscript",
+                "match": "@[A-Za-z_][A-Za-z0-9_]*"
+            }]
+        },
+
+        "numbers": {
+            "patterns": [{
+                "name": "constant.numeric.gdscript",
+                "match": "\\b\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?j?\\b"
+            }]
+        }
+    },
+
+    "foldingStartMarker": "^.*:\\s*(#.*)?$",
+    "foldingStopMarker": "^$"
+}
