@@ -1,6 +1,6 @@
 {
     "name": "gdscript-vsce",
-    "displayName": "GDScript",
+    "displayName": "GDScript Language Support",
     "description": "GDScript language and syntax highlighting extension.",
     "version": "0.0.1",
     "icon": "assets/godot-logo.png",
